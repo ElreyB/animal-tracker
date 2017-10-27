@@ -9,4 +9,9 @@ import { ZooAnimal } from './zoo-animal.model';
 
 export class AnimalListComponent {
   @Input() childAnimalList: ZooAnimal[];
+  @Output() animalClickedSender = new EventEmitter();
+
+  editButtonClicked(animalToEdit: ZooAnimal) {
+    this.animalClickedSender.emit(animalToEdit);
+  }
 }
