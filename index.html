@@ -11,14 +11,16 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
-
-    <!-- <link rel="stylesheet" href="build/css/styles.css"> -->
+    <link rel="stylesheet" href="build/css/styles.css">
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
   <body>
     <div class="container">
+      <div class="page-header">
+        <h1>Seattle Zoo Animal Tracker</h1>
+      </div>
       <app-root>Loading...</app-root>
     </div>
   </body>

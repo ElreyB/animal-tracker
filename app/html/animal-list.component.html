@@ -1,11 +1,39 @@
-<select (change)="onChange($event.target.value)">
+<select (change)="onChange($event.target.value)" class="center-block">
   <option value="allAnimals" selected="selected">All Animals</option>
   <option value="youngAnimals">Young Animals</option>
   <option value="matureAnimals">Mature Animals</option>
 </select>
 
 <ul>
-  <li *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity">{{currentAnimal.name}}
+  <li *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity" class="well">
     <button (click)="editButtonClicked(currentAnimal)" class="btn">Edit</button>
+    <h3>{{currentAnimal.name}} <small>{{currentAnimal.species}}</small></h3>
+    <div class="row">
+      <div class="col-md-6">
+          <label for="caretakers">Number of Caretakers:</label> <p class="d-inline"> {{currentAnimal.caretakers}}</p>
+      </div>
+      <div class="col-md-2">
+          <label for="age">Age:</label> <p class="d-inline">{{currentAnimal.age}}</p>
+      </div>
+      <div class="col-md-4">
+          <label for="sex">Sex: </label> <p class="d-inline"> {{currentAnimal.sex}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+          <label for="diet">Diet:</label> <p class="d-inline"> {{currentAnimal.diet}}</p>
+      </div>
+      <div class="col-md-8">
+          <label for="zoo-location">Zoo Location:</label> <p class="d-inline"> {{currentAnimal.location}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <label for="likes">Likes: </label> <p> {{currentAnimal.likes}}</p>
+      </div>
+      <div class="col-md-6">
+          <label for="dislikes">Dislikes:</label> <p> {{currentAnimal.dislikes}}</p>
+      </div>
+    </div>
   </li>
 </ul>
