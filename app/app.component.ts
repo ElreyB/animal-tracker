@@ -5,6 +5,10 @@ import { ZooAnimal } from './zoo-animal.model';
   selector: 'app-root',
   templateUrl: 'app/html/app.component.html',
   styles:[`
+    button {
+      margin-top: -13px;
+      margin-bottom: 9px;
+    }
     `]
 })
 
@@ -31,7 +35,11 @@ export class AppComponent {
   }
 
   clickedAddButton() {
-    this.addAnimalWell = true;
+    if(this.addAnimalWell) {
+      this.addAnimalWell = false;
+    } else {
+      this.addAnimalWell = true;
+    }
   }
 
 }

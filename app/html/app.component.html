@@ -1,9 +1,10 @@
 <div class="row">
   <div class="col-sm-6">
-    <button type="button" class="" (click)="clickedAddButton()">Add Animal</button>
+
     <animal-list [childAnimalList]="masterAnimalList" (animalClickedSender)="editAnimal($event)"></animal-list>
   </div>
   <div class="col-sm-6">
+    <button type="button" class="center-block" (click)="clickedAddButton()">Add Animal</button>
     <edit-animal [animalSelected]="selectedAnimal" (editAnimalSender)="finishedEditing()"></edit-animal>
     <div *ngIf="addAnimalWell" class="well">
       <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
