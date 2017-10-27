@@ -1,0 +1,30 @@
+<div class="well">
+  <label for="name">Animal's Name</label>
+  <input #newName>
+
+  <label for="species">Animal's Species</label>
+  <input #newSpecies>
+
+  <label for="age">Animal's Age</label>
+  <input type="number" #newAge>
+
+  <label for="diet">Animal's Diet</label>
+  <input #newDiet>
+
+  <label for="location">Animal's Location</label>
+  <input #newLocation>
+
+  <label for="name">Animal's Caretaker Amount</label>
+  <input type="number" #newCaretakers>
+
+  <label for="sex">Animal's Sex</label>
+  <input #newSex>
+
+  <label for="likes">Animal's Likes</label>
+  <input #newLikes>
+
+  <label for="dislikes">Animal's Dislikes</label>
+  <input #newDislikes>
+
+  <button (click)="newAnimalForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';" class="btn">Done</button>
+</div>

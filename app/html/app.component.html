@@ -8,6 +8,7 @@
     </div>
     <div class="col-md-6">
       <edit-animal [animalSelected]="selectedAnimal" (editAnimalSender)="finishedEditing()"></edit-animal>
+      <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
     </div>
   </div>
 </div>
