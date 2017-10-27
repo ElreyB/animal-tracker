@@ -1,27 +1,82 @@
 <div *ngIf="animalSelected">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <p>
-        {{animalSelected.name}}<br>
-        {{animalSelected.species}}<br>
-        {{animalSelected.age}}<br>
-        {{animalSelected.diet}}<br>
-        {{animalSelected.location}}<br>
-        {{animalSelected.caretakers}}<br>
-        {{animalSelected.sex}}<br>
-        {{animalSelected.likes}}<br>
-        {{animalSelected.dislikes}}<br>
-      </p>
+      <div class="page-header">
+        <h2>Edit Animal Information</h2>
+      </div>
+      <h3>{{animalSelected.name}} <small>{{animalSelected.species}}</small></h3>
+      <div class="row">
+        <div class="col-md-6">
+            <label for="caretakers">Number of Caretakers:</label> <p class="d-inline"> {{animalSelected.caretakers}}</p>
+        </div>
+        <div class="col-md-2">
+            <label for="age">Age:</label> <p class="d-inline">{{animalSelected.age}}</p>
+        </div>
+        <div class="col-md-4">
+            <label for="sex">Sex: </label> <p class="d-inline"> {{animalSelected.sex}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <label for="diet">Diet:</label> <p class="d-inline"> {{animalSelected.diet}}</p>
+        </div>
+        <div class="col-md-8">
+            <label for="zoo-location">Zoo Location:</label> <p class="d-inline"> {{animalSelected.location}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+            <label for="likes">Likes: </label> <p> {{animalSelected.likes}}</p>
+        </div>
+        <div class="col-md-6">
+            <label for="dislikes">Dislikes:</label> <p> {{animalSelected.dislikes}}</p>
+        </div>
+      </div>
     </div>
     <div class="panel-body">
-      <label for="name">Edit Animal's Name</label>
-      <input [(ngModel)]="animalSelected.name">
-
-      <label for="name">Edit Animal's Age</label>
-      <input type="number"[(ngModel)]="animalSelected.age">
-
-      <label for="name">Edit Animal's Caretaker Amount</label>
-      <input type="number" [(ngModel)]="animalSelected.caretakers">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="name">Edit Animal's Name</label>
+          <input [(ngModel)]="animalSelected.name">
+        </div>
+        <div class="col-md-6">
+          <label for="species">Edit Animal's Species</label>
+          <input [(ngModel)]="animalSelected.species">
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="name">Edit Animal's Caretaker Amount</label>
+          <input type="number" [(ngModel)]="animalSelected.caretakers">
+        </div>
+        <div class="col-md-6">
+          <label for="name">Edit Animal's Age</label>
+          <input type="number"[(ngModel)]="animalSelected.age">
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="diet">Edit Animal's Diet</label>
+          <input [(ngModel)]="animalSelected.diet">
+        </div>
+        <div class="col-md-6">
+          <label for="location">Edit Animal's Location</label>
+          <input [(ngModel)]="animalSelected.location">
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="likes">Edit Animal's Likes</label>
+          <input [(ngModel)]="animalSelected.likes">
+        </div>
+        <div class="col-md-6">
+          <label for="dislikes">Edit Animal's Dislikes</label>
+          <input [(ngModel)]="animalSelected.dislikes">
+        </div>
+      </div>
       <button (click)="editDoneButtonClicked()" class="btn">Done</button>
     </div>
   </div>
