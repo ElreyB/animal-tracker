@@ -1,50 +1,48 @@
-<div class="well">
-  <div class="row">
-    <div class="col-md-6">
-      <label for="name">Animal's Name</label>
-      <input #newName>
-    </div>
-    <div class="col-md-6">
-      <label for="species">Animal's Species</label>
-      <input #newSpecies>
-    </div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="name">Animal's Name</label>
+    <input #newName>
   </div>
-  <div class="line"></div>
-  <div class="row">
-    <div class="col-md-4">
-      <label for="name">Number of Caretaker</label>
-      <input type="number" #newCaretakers>
-    </div>
-    <div class="col-md-4">
-      <label for="age">Animal's Age</label>
-      <input type="number" #newAge>
-    </div>
-    <div class="col-md-4">
-      <label for="sex">Animal's Sex</label>
-      <input #newSex>
-    </div>
+  <div class="col-md-6">
+    <label for="species">Animal's Species</label>
+    <input #newSpecies>
   </div>
-  <div class="line"></div>
-  <div class="row">
-    <div class="col-md-6">
-      <label for="diet">Animal's Diet</label>
-      <input #newDiet>
-    </div>
-    <div class="col-md-6">
-      <label for="location">Animal's Location</label>
-      <input #newLocation>
-    </div>
-  </div>
-  <div class="line"></div>
-  <div class="row">
-    <div class="col-md-6">
-      <label for="likes">Animal's Likes</label>
-      <input #newLikes>
-    </div>
-    <div class="col-md-6">
-      <label for="dislikes">Animal's Dislikes</label>
-      <input #newDislikes>
-    </div>
-  </div>
-  <button (click)="newAnimalForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';" class="btn">Done</button>
 </div>
+<div class="line"></div>
+<div class="row">
+  <div class="col-md-4">
+    <label for="name">Number of Caretaker</label>
+    <input type="number" #newCaretakers>
+  </div>
+  <div class="col-md-4">
+    <label for="age">Animal's Age</label>
+    <input type="number" #newAge>
+  </div>
+  <div class="col-md-4">
+    <label for="sex">Animal's Sex</label>
+    <input #newSex>
+  </div>
+</div>
+<div class="line"></div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="diet">Animal's Diet</label>
+    <input #newDiet>
+  </div>
+  <div class="col-md-6">
+    <label for="location">Animal's Location</label>
+    <input #newLocation>
+  </div>
+</div>
+<div class="line"></div>
+<div class="row">
+  <div class="col-md-6">
+    <label for="likes">Animal's Likes</label>
+    <input #newLikes>
+  </div>
+  <div class="col-md-6">
+    <label for="dislikes">Animal's Dislikes</label>
+    <input #newDislikes>
+  </div>
+</div>
+<button (click)="newAnimalForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';" class="btn">Done</button>

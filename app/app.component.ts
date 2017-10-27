@@ -10,6 +10,7 @@ import { ZooAnimal } from './zoo-animal.model';
 
 export class AppComponent {
   selectedAnimal = null;
+  addAnimalWell: boolean = false;
 
   masterAnimalList: ZooAnimal[] = [
     new ZooAnimal("Arctic Fox", "Moon", 2, "Carnivore", "Northen Trail", 5, "Female", "Cool shade", "Loud noises"),
@@ -26,5 +27,11 @@ export class AppComponent {
 
   addAnimal(newAnimalFromChild: ZooAnimal){
     this.masterAnimalList.push(newAnimalFromChild);
+    this.addAnimalWell = false;
   }
+
+  clickedAddButton() {
+    this.addAnimalWell = true;
+  }
+
 }

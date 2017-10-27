@@ -8,7 +8,7 @@ import { ZooAnimal } from './zoo-animal.model';
     h3 {
       text-align: center;
     }
-    button {
+    button.edit {
       float: right;
     }
     p {
@@ -27,7 +27,8 @@ import { ZooAnimal } from './zoo-animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: ZooAnimal[];
   @Output() animalClickedSender = new EventEmitter();
-  filterByMaturity: string = "allAnimals"
+  filterByMaturity: string = "allAnimals";
+  addAnimalWell: boolean = false;
 
   editButtonClicked(animalToEdit: ZooAnimal) {
     this.animalClickedSender.emit(animalToEdit);
@@ -35,6 +36,10 @@ export class AnimalListComponent {
 
   onChange(optionFromMenu){
     this.filterByMaturity = optionFromMenu;
+  }
+  
+  clickedAddButton(){
+    this.addAnimalWell = true;
   }
 
 }
