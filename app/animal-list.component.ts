@@ -10,8 +10,14 @@ import { ZooAnimal } from './zoo-animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: ZooAnimal[];
   @Output() animalClickedSender = new EventEmitter();
+  filterByMaturity: string = "allAnimals"
 
   editButtonClicked(animalToEdit: ZooAnimal) {
     this.animalClickedSender.emit(animalToEdit);
   }
+
+  onChange(optionFromMenu){
+    this.filterByMaturity = optionFromMenu;
+  }
+
 }
