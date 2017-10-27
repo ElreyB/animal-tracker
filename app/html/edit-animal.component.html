@@ -14,16 +14,14 @@
       </p>
     </div>
     <div class="panel-body">
-      <h3>Edit Animal</h3>
+      <label for="name">Edit Animal's Name</label>
       <input [(ngModel)]="animalSelected.name">
-      <input [(ngModel)]="animalSelected.species">
-      <input [(ngModel)]="animalSelected.age">
-      <input [(ngModel)]="animalSelected.diet">
-      <input [(ngModel)]="animalSelected.location">
-      <input [(ngModel)]="animalSelected.caretakers">
-      <input [(ngModel)]="animalSelected.sex">
-      <input [(ngModel)]="animalSelected.likes">
-      <input [(ngModel)]="animalSelected.dislikes">
+
+      <label for="name">Edit Animal's Age</label>
+      <input type="number"[(ngModel)]="animalSelected.age">
+
+      <label for="name">Edit Animal's Caretaker Amount</label>
+      <input type="number" [(ngModel)]="animalSelected.caretakers">
       <button (click)="editDoneButtonClicked()" class="btn">Done</button>
     </div>
   </div>
