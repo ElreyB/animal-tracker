@@ -4,7 +4,19 @@ import { ZooAnimal } from './zoo-animal.model';
 @Component({
   selector: 'add-animal',
   templateUrl: 'app/html/add-animal.component.html',
-  styles: [``]
+  styles: [`
+    div.line{
+      background-color: #333333;
+      width: 515px;
+      height: 3px;
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+    button {
+      margin-top: 9px;
+      margin-bottom: -8px;
+    }
+    `]
 })
 
 export class AddAnimalComponent {
@@ -31,6 +43,6 @@ export class AddAnimalComponent {
       sex,
       likes,
       dislikes);
-      this.newAnimalSender.emit(newAnimalToAdd); 
+      this.newAnimalSender.emit(newAnimalToAdd);
   }
 }
