@@ -1,0 +1,28 @@
+<div *ngIf="animalSelected">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <p>
+        {{animalSelected.name}}<br>
+        {{animalSelected.species}}<br>
+        {{animalSelected.age}}<br>
+        {{animalSelected.diet}}<br>
+        {{animalSelected.location}}<br>
+        {{animalSelected.caretakers}}<br>
+        {{animalSelected.sex}}<br>
+        {{animalSelected.likes}}<br>
+        {{animalSelected.dislikes}}<br>
+      </p>
+    </div>
+    <div class="panel-body">
+      <input [(ngModel)]="animalSelected.name">
+      <input [(ngModel)]="animalSelected.species">
+      <input [(ngModel)]="animalSelected.age">
+      <input [(ngModel)]="animalSelected.diet">
+      <input [(ngModel)]="animalSelected.location">
+      <input [(ngModel)]="animalSelected.caretakers">
+      <input [(ngModel)]="animalSelected.sex">
+      <input [(ngModel)]="animalSelected.likes">
+      <input [(ngModel)]="animalSelected.dislikes">
+    </div>
+  </div>
+</div>

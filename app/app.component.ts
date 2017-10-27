@@ -3,7 +3,7 @@ import { ZooAnimal } from './zoo-animal.model';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
+  templateUrl: 'app/html/app.component.html',
   styles:[`
     `]
 })
