@@ -4,10 +4,10 @@
 <div class="well">
   <div class="row">
     <div class="col-md-6">
-      <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+      <animal-list [childAnimalList]="masterAnimalList" (animalClickedSender)="editAnimal($event)"></animal-list>
     </div>
     <div class="col-md-6">
-
+      <edit-animal [animalSelected]="selectedAnimal" (editAnimalSender)="finishedEditing()"></edit-animal>
     </div>
   </div>
 </div>

@@ -14,6 +14,7 @@
       </p>
     </div>
     <div class="panel-body">
+      <h3>Edit Animal</h3>
       <input [(ngModel)]="animalSelected.name">
       <input [(ngModel)]="animalSelected.species">
       <input [(ngModel)]="animalSelected.age">
@@ -23,6 +24,7 @@
       <input [(ngModel)]="animalSelected.sex">
       <input [(ngModel)]="animalSelected.likes">
       <input [(ngModel)]="animalSelected.dislikes">
+      <button (click)="editDoneButtonClicked()" class="btn">Done</button>
     </div>
   </div>
 </div>

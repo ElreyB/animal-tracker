@@ -8,4 +8,9 @@ import { ZooAnimal } from './zoo-animal.model';
 })
 export class EditAnimalComponent {
   @Input() animalSelected: ZooAnimal;
+  @Output() editAnimalSender = new EventEmitter();
+
+  editDoneButtonClicked() {
+    this.editAnimalSender.emit();
+  }
 }
