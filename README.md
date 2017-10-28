@@ -1,6 +1,6 @@
 # _Seattle Zoo Animal Tracker_
 
-#### _App to keep track of zoo animals: Epicodus solo exercise, 10.27.2017_
+#### _App to keep track of zoo animals: Epicodus solo exercise, 10.28.2017_
 
 #### By _**Elrey Belmonti**_
 
@@ -43,7 +43,6 @@ _Edit an animal already log in._
 _Feel free to contact me at elbelmonti@gmail.com_
 
 ## Future functionality
-* Show animals based on diet type. Then, show all animals who eat meat (carnivores AND omnivores)
 * Expand the application to differentiate between animals' species. Group the animals into those categories.
 * Add a property that records when each animal was admitted. The user could enter a date and time, or the app can generate a timestamp.
 
