@@ -24,6 +24,13 @@ import { ZooAnimal } from './zoo-animal.model';
       margin-bottom: 8px;
       margin-top: -11px;
     }
+    li {
+      padding: 12px;
+      border: 3px solid;
+      border-radius: 25px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
     `]
 })
 
