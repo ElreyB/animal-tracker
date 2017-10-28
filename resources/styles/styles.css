@@ -10,3 +10,14 @@ body {
   background-size: cover;
   color: white;
 }
+
+.page-header {
+  background-color: #463e3d;
+  border: solid;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+image {
+  float: left;
+}
