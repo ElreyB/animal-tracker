@@ -45,6 +45,9 @@ import { ZooAnimal } from './zoo-animal.model';
     .bg-primary {
       background-color: rgba(51, 122, 183, 0.84);
     }
+    button.delete {
+      background-color: #bb2b19;
+    }
     `]
 })
 
