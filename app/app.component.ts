@@ -27,6 +27,10 @@ export class AppComponent {
   masterAnimalList: ZooAnimal[] = [
     new ZooAnimal("Arctic Fox", "Moon", 2, "Carnivore", "Northen Trail", 5, "Female", "Cool shade", "Loud noises"),
     new ZooAnimal("Ocelot", "Prince", 4, "Carnivore", "Tropical Rain Forest Building", 6, "Male", "Laying in the sunshine", "Toys that are not rope-based"),
+    new ZooAnimal("Northwest Black Tailed Deer", "Tinkerbell", 8, "Herbivore", "Northern Trail", 2, "Female", "Delicate roots and leaves", "Loud Noises"),
+    new ZooAnimal("African Jewel Beetle", "Mindy", 1, "Herbivore", "Tropical Rain Forest Build", 2, "Male", "Eating flowers", "Big boots"),
+    new ZooAnimal("Red Panda", "Cinnamon", 2, "Herbivore", "Tropical Rain Forest Build", 4, "Female", "Tire swing", "sour apples and peanuts"),
+    new ZooAnimal("Black-crowned Night Heron", "Elcar", 6, "Piscivore", "Northern Trail", 5, "Male", "Gliding on the wind", "Airplanes")
   ]
 
   editAnimal(clickedAnimal){

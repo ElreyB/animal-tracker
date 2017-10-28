@@ -33,17 +33,14 @@ import { ZooAnimal } from './zoo-animal.model';
       margin-bottom: 10px;
       margin-top: 10px;
     }
-    .bg-danger {
-      background-color: #f2904e;
-    }
-    .bg-info {
-      background-color: #71abdd;
-    }
     label, h3 {
       color: black;
     }
     small {
       color: white;
+    }
+    .bg-success {
+      background-color: #4a97a5;
     }
     `]
 })
@@ -68,9 +65,9 @@ export class AnimalListComponent {
 
   ageColor(currentAnimal){
     if (currentAnimal.age <= 2){
-      return "bg-danger";
+      return "bg-primary";
     } else {
-      return "bg-info";
+      return "bg-success";
     }
   }
 }
