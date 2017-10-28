@@ -8,9 +8,20 @@
 
 _This app will help users to keep track of animals at the Seattle Zoo._
 _The user will be able to see animals currently in zoo_
+
+![list](https://user-images.githubusercontent.com/20192033/32138093-09a1861a-bbe2-11e7-9ccd-c4e5086e3100.png)
+
 _Filter list_
+
+![filter_list](https://user-images.githubusercontent.com/20192033/32138091-fd5832be-bbe1-11e7-9174-1cda751e9c75.png)
+
 _Add an animal_
+
+![add_animal](https://user-images.githubusercontent.com/20192033/32138087-eadab274-bbe1-11e7-914f-012b51d75f6a.png)
+
 _Edit an animal already log in._
+
+![edit_animal](https://user-images.githubusercontent.com/20192033/32138089-f2167eb0-bbe1-11e7-8bfc-37fce3b3edee.png)
 
 ## Setup/Installation Requirements
 
