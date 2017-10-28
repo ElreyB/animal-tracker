@@ -6,7 +6,10 @@
 
 ## Description
 
-_This app will help users to keep track of animals at the Seattle Zoo. The user will be at to see animals current in zoo, add an animal and edit an animal already log in._
+_This app will help users to keep track of animals at the Seattle Zoo._
+_The user will be able to see animals currently in zoo_
+_Add an animal_
+_Edit an animal already log in._
 
 ## Setup/Installation Requirements
 
@@ -21,7 +24,7 @@ _This app will help users to keep track of animals at the Seattle Zoo. The user 
 
 ## Known Bugs 🐛🐛🐛
 
-* _No Known Bugs_
+* _Information does not persist_
 
 ## Support and contact details
 
