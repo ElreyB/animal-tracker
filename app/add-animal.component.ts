@@ -6,15 +6,15 @@ import { ZooAnimal } from './zoo-animal.model';
   templateUrl: 'app/html/add-animal.component.html',
   styles: [`
     div.line{
-      background-color: rgba(37, 103, 16, 0.91);
+      background-color: black;
       width: 515px;
       height: 3px;
       margin-top: 9px;
       margin-bottom: 9px;
     }
     button {
-      margin-top: 9px;
-      margin-bottom: -8px;
+      margin-top: 15px;
+      margin-bottom: -6px;
     }
     input {
       background-color: #463e3d;

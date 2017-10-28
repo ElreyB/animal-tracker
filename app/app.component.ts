@@ -13,7 +13,7 @@ import { ZooAnimal } from './zoo-animal.model';
       padding: 5px;
     }
     div.add {
-      background-color: #363d06;
+      background-color: rgba(54, 61, 6, 0.84);;
       border: 3px solid white;
       border-radius: 25px;
     }
