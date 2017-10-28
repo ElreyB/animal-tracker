@@ -22,9 +22,9 @@ import { ZooAnimal } from './zoo-animal.model';
     p.number {
       width: 44px;
     }
-    select {
+    select.center-block {
       margin-bottom: 8px;
-      margin-top: -11px;
+      margin-top: -26px;
     }
     li {
       padding: 12px;

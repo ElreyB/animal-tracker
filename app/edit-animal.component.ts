@@ -13,7 +13,7 @@ import { ZooAnimal } from './zoo-animal.model';
       color: white;
     }
     p.number {
-      width: 44px;
+      width: 55px;
     }
     h3, h2 {
       text-align: center;

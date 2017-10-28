@@ -12,11 +12,11 @@
 <div class="row">
   <div class="col-md-4">
     <label for="name">Number of Caretaker</label>
-    <input type="number" #newCaretakers>
+    <input type="number" #newCaretakers min="1" max="10" step="1">
   </div>
   <div class="col-md-4">
     <label for="age">Animal's Age</label>
-    <input type="number" #newAge>
+    <input type="number" #newAge min="1" max="999" step="1">
   </div>
   <div class="col-md-4">
     <label for="sex">Animal's Sex</label>
