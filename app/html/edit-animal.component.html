@@ -7,10 +7,10 @@
       <h3>{{animalSelected.name}} <small>{{animalSelected.species}}</small></h3>
       <div class="row">
         <div class="col-md-6">
-            <label for="caretakers">Number of Caretakers:</label> <p > {{animalSelected.caretakers}}</p>
+            <label for="caretakers">Number of Caretakers:</label> <p class="number"> {{animalSelected.caretakers}}</p>
         </div>
         <div class="col-md-2">
-            <label for="age">Age:</label> <p >{{animalSelected.age}}</p>
+            <label for="age">Age:</label> <p class="number">{{animalSelected.age}}</p>
         </div>
         <div class="col-md-4">
             <label for="sex">Sex: </label> <p > {{animalSelected.sex}}</p>
@@ -77,7 +77,7 @@
           <input [(ngModel)]="animalSelected.dislikes">
         </div>
       </div>
-      <button (click)="editDoneButtonClicked()" class="btn">Done</button>
+      <button (click)="editDoneButtonClicked()" class="btn center-block btn-block">Done</button>
     </div>
   </div>
 </div>

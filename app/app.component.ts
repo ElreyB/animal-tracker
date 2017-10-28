@@ -30,7 +30,12 @@ export class AppComponent {
   ]
 
   editAnimal(clickedAnimal){
-    this.selectedAnimal = clickedAnimal;
+    if(this.selectedAnimal) {
+      this.selectedAnimal = null;
+    } else {
+      this.selectedAnimal = clickedAnimal;
+    }
+
   }
 
   finishedEditing(){
