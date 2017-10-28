@@ -17,6 +17,9 @@ import { ZooAnimal } from './zoo-animal.model';
       border-radius: 4px;
       border: 2px solid grey;
     }
+    p.number {
+      width: 44px;
+    }
     select {
       margin-bottom: 8px;
       margin-top: -11px;
@@ -37,9 +40,16 @@ export class AnimalListComponent {
   onChange(optionFromMenu){
     this.filterByMaturity = optionFromMenu;
   }
-  
+
   clickedAddButton(){
     this.addAnimalWell = true;
   }
 
+  ageColor(currentAnimal){
+    if (currentAnimal.age <= 2){
+      return "bg-danger";
+    } else {
+      return "bg-info";
+    }
+  }
 }

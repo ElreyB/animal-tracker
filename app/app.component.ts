@@ -9,6 +9,9 @@ import { ZooAnimal } from './zoo-animal.model';
       margin-top: -13px;
       margin-bottom: 9px;
     }
+    animal-list {
+      padding: 5px;
+    }
     `]
 })
 
@@ -35,6 +38,7 @@ export class AppComponent {
   }
 
   clickedAddButton() {
+    this.selectedAnimal = null;
     if(this.addAnimalWell) {
       this.addAnimalWell = false;
     } else {

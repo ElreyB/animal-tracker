@@ -27,22 +27,22 @@
 <div class="row">
   <div class="col-md-6">
     <label for="diet">Animal's Diet</label>
-    <input #newDiet>
+    <input #newDiet required>
   </div>
   <div class="col-md-6">
     <label for="location">Animal's Location</label>
-    <input #newLocation>
+    <input #newLocation required>
   </div>
 </div>
 <div class="line"></div>
 <div class="row">
   <div class="col-md-6">
     <label for="likes">Animal's Likes</label>
-    <input #newLikes>
+    <input #newLikes required>
   </div>
   <div class="col-md-6">
     <label for="dislikes">Animal's Dislikes</label>
-    <input #newDislikes>
+    <input #newDislikes required>
   </div>
 </div>
 <button (click)="newAnimalForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLikes.value=''; newDislikes.value='';" class="btn">Done</button>
