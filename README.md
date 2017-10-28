@@ -8,6 +8,7 @@
 
 _This app will help users to keep track of animals at the Seattle Zoo._
 _The user will be able to see animals currently in zoo_
+_Filter list_
 _Add an animal_
 _Edit an animal already log in._
 
