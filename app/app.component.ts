@@ -51,6 +51,10 @@ export class AppComponent {
     this.addAnimalWell = false;
   }
 
+  deleteAnimal(animalIndex: number){
+    this.masterAnimalList.splice(animalIndex, 1);
+  }
+
   clickedAddButton() {
     this.selectedAnimal = null;
     if(this.addAnimalWell) {

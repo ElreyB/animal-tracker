@@ -50,12 +50,17 @@ import { ZooAnimal } from './zoo-animal.model';
 
 export class AnimalListComponent {
   @Input() childAnimalList: ZooAnimal[];
-  @Output() animalClickedSender = new EventEmitter();
+  @Output() editAnimalClickedSender = new EventEmitter();
+  @Output() deleteAnimalClickedSender = new EventEmitter();
   filterByOption: string = "allAnimals";
   addAnimalWell: boolean = false;
 
   editButtonClicked(animalToEdit: ZooAnimal) {
-    this.animalClickedSender.emit(animalToEdit);
+    this.editAnimalClickedSender.emit(animalToEdit);
+  }
+
+  deleteButtonClicked(deleteAnimalIndexNumber: number){
+    this.deleteAnimalClickedSender.emit(deleteAnimalIndexNumber);
   }
 
   onChange(optionFromMenu){

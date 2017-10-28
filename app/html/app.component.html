@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-sm-6">
 
-    <animal-list [childAnimalList]="masterAnimalList" (animalClickedSender)="editAnimal($event)"></animal-list>
+    <animal-list [childAnimalList]="masterAnimalList" (editAnimalClickedSender)="editAnimal($event)" (deleteAnimalClickedSender)="deleteAnimal($event)"></animal-list>
   </div>
   <div class="col-sm-6">
     <button type="button" class="center-block" (click)="clickedAddButton()">Add Animal</button>
