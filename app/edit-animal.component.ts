@@ -38,18 +38,14 @@ import { ZooAnimal } from './zoo-animal.model';
     div.page-header, small {
       color: white;
     }
-    .panel-body {
-      background-color: #b72020;
-    }
-    .panel-heading {
-      background-color: #b72020;
-    }
-    .panel-heading, .panel-body {
+    .panel-body, .panel-heading {
+      background-color: rgba(183, 32, 32, 0.76);
       border: solid white;
       border-radius: 28px;
     }
     .panel {
       border-radius: 27px;
+      background-color: rgba(255, 255, 255, 0.56);
     }
     input {
       background-color: #463e3d;

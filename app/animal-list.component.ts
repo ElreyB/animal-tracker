@@ -40,7 +40,10 @@ import { ZooAnimal } from './zoo-animal.model';
       color: white;
     }
     .bg-success {
-      background-color: #4a97a5;
+      background-color: rgba(74, 151, 165, 0.89);
+    }
+    .bg-primary {
+      background-color: rgba(51, 122, 183, 0.84);
     }
     `]
 })

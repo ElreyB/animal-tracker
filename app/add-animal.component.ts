@@ -6,7 +6,7 @@ import { ZooAnimal } from './zoo-animal.model';
   templateUrl: 'app/html/add-animal.component.html',
   styles: [`
     div.line{
-      background-color: #333333;
+      background-color: rgba(37, 103, 16, 0.91);
       width: 515px;
       height: 3px;
       margin-top: 9px;
