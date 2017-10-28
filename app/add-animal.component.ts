@@ -16,6 +16,9 @@ import { ZooAnimal } from './zoo-animal.model';
       margin-top: 9px;
       margin-bottom: -8px;
     }
+    input {
+      background-color: #463e3d;
+    }
     `]
 })
 

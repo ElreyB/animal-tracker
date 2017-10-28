@@ -21,3 +21,11 @@ body {
 image {
   float: left;
 }
+
+button {
+  background-color: #453d3c;
+}
+
+.btn {
+  border: 2px solid white;
+}

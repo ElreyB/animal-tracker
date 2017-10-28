@@ -8,10 +8,14 @@ import { ZooAnimal } from './zoo-animal.model';
     button {
       margin-top: -13px;
       margin-bottom: 9px;
-      background-color: #453d3c;
     }
     animal-list {
       padding: 5px;
+    }
+    div.add {
+      background-color: #363d06;
+      border: 3px solid white;
+      border-radius: 25px;
     }
     `]
 })

@@ -6,7 +6,7 @@
   <div class="col-sm-6">
     <button type="button" class="center-block" (click)="clickedAddButton()">Add Animal</button>
     <edit-animal [animalSelected]="selectedAnimal" (editAnimalSender)="finishedEditing()"></edit-animal>
-    <div *ngIf="addAnimalWell" class="well bg-danger">
+    <div *ngIf="addAnimalWell" class="well add">
       <add-animal (newAnimalSender)="addAnimal($event)"></add-animal>
     </div>
   </div>
