@@ -3,11 +3,15 @@
   <option value="allAnimals" selected="selected">All Animals</option>
   <option value="youngAnimals">Young Animals</option>
   <option value="matureAnimals">Mature Animals</option>
+  <option value="carnivoreAnimals">Carnivorous Animals</option>
+  <option value="herbivoreAnimals">Herbivore Animals</option>
+  <option value="piscivoreAnimals">Piscivore Animals</option>
+
 </select>
 
 
 <ul>
-  <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | maturity:filterByMaturity" class="well">
+  <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | options:filterByOption" class="well">
     <button (click)="editButtonClicked(currentAnimal)" class="btn edit">Edit</button>
     <h3>{{currentAnimal.name}} <small>{{currentAnimal.species}}</small></h3>
     <div class="row">

@@ -51,7 +51,7 @@ import { ZooAnimal } from './zoo-animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: ZooAnimal[];
   @Output() animalClickedSender = new EventEmitter();
-  filterByMaturity: string = "allAnimals";
+  filterByOption: string = "allAnimals";
   addAnimalWell: boolean = false;
 
   editButtonClicked(animalToEdit: ZooAnimal) {
@@ -59,7 +59,7 @@ export class AnimalListComponent {
   }
 
   onChange(optionFromMenu){
-    this.filterByMaturity = optionFromMenu;
+    this.filterByOption = optionFromMenu;
   }
 
   clickedAddButton(){
