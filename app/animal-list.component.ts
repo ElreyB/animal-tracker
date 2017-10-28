@@ -11,11 +11,13 @@ import { ZooAnimal } from './zoo-animal.model';
     button.edit {
       float: right;
     }
+    button.edit, p {
+      background-color: #453d3c;
+    }
     p {
       padding: 2px 16px;
-      background-color: white;
       border-radius: 4px;
-      border: 2px solid grey;
+      border: 2px solid white;
     }
     p.number {
       width: 44px;
@@ -30,6 +32,18 @@ import { ZooAnimal } from './zoo-animal.model';
       border-radius: 25px;
       margin-bottom: 10px;
       margin-top: 10px;
+    }
+    .bg-danger {
+      background-color: #f2904e;
+    }
+    .bg-info {
+      background-color: #71abdd;
+    }
+    label, h3 {
+      color: black;
+    }
+    small {
+      color: white;
     }
     `]
 })
