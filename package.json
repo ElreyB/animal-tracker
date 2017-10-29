@@ -6,7 +6,8 @@
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "tsc:w": "tsc -w",
+    "deploy": "git push origin master && git push heroku master"
   },
   "license": "MIT",
   "dependencies": {
