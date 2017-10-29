@@ -63,4 +63,25 @@ export class EditAnimalComponent {
   editDoneButtonClicked() {
     this.editAnimalSender.emit();
   }
+  limitAge() {
+    const { age } = this.animalSelected
+
+    if (age > 999) {
+      age = 999
+    } else if (age < 0) {
+      age = 0
+    }
+    this.animalSelected.age = age
+  }
+
+  limitCaretaker() {
+    const { caretakers } = this.animalSelected
+
+    if (caretakers > 10) {
+      caretakers = 10
+    } else if (caretakers < 0) {
+      caretakers = 0
+    }
+    this.animalSelected.caretakers = caretakers
+  }
 }
