@@ -30,10 +30,7 @@ import { ZooAnimal } from './zoo-animal.model';
       border-radius: 12px;
     }
     div.page-header {
-      background-color: #463e3d;
-      border: solid;
-      border-radius: 10px;
-      padding-left: 20px;
+      margin-top: 0;
     }
     div.page-header, small {
       color: white;
@@ -47,7 +44,6 @@ import { ZooAnimal } from './zoo-animal.model';
       border-radius: 27px;
       background-color: rgba(255, 255, 255, 0.56);
       position: fixed;
-      bottom: 14px;
     }
     input {
       background-color: #463e3d;
