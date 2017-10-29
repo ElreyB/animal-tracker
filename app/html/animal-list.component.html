@@ -12,8 +12,8 @@
 
 <ul>
   <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | options:filterByOption; let index=index" class="well">
-    <button (click)="editButtonClicked(currentAnimal)" class="btn edit">Edit</button>
-    <button (click)="deleteButtonClicked(index)" class="btn delete">Remove</button>
+    <button (click)="editButtonClicked(currentAnimal)" class="btn edit">✍️ </button>
+    <button (click)="deleteButtonClicked(index)" class="btn delete"><img src="resources/images/remove.png" alt=""></button>
     <h3>{{currentAnimal.name}} <small>{{currentAnimal.species}}</small></h3>
     <div class="row">
       <div class="col-md-6">

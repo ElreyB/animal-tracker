@@ -46,11 +46,14 @@ import { ZooAnimal } from './zoo-animal.model';
     .panel {
       border-radius: 27px;
       background-color: rgba(255, 255, 255, 0.56);
+      position: fixed;
+      bottom: 14px;
     }
     input {
       background-color: #463e3d;
       padding: 2px 16px;
     }
+
     `]
 })
 export class EditAnimalComponent {

@@ -10,6 +10,7 @@ import { ZooAnimal } from './zoo-animal.model';
     }
     button.edit {
       float: right;
+      background-color:
     }
     p, select {
       background-color: #453d3c;
